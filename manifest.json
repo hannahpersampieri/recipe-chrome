@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+
+	"name": "Recipe",
+	"description": "Plan a week's worth of meals",
+	"version": "1.1",
+
+	"browser_action": {
+		"default_popup": "popup.html" 
+	},
+
+	
+	"permissions": [
+		"activeTab"
+	]
+
+}
