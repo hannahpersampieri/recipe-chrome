@@ -37,12 +37,14 @@ for(i = 0; i < ingredients_div.length; i++){
 				info["food"] = inner_text[j];
 			}
 		}
-
+		if(info["unit"] == null){
+			info["unit"] = "";
+		}
+		if(info["amount"] == null){
+			info["amount"] = "";
+		}
 	}
 	ingredients.push(info);
 }
-/* TO - DO
-	- push to popup
-*/
 ingredients;
 

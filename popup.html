@@ -4,14 +4,18 @@
 	<head>
 		<title> Recipe: Add this meal </title>
 		<style>
+			html{
+				height: 600px;
+				width: 400px;
+			}
 			body{
 				font-family: Helvetica;
 				font-size: 100%;
 			}
 			form {
 				white-space: pre;
-				text-overflow: ellipsis;
-				overflow: hidden;
+				min-width: 600px;
+				max-width: 100%;
 			}
 			#button {
 				/* format later */
@@ -22,8 +26,13 @@
 		</head>
 		<body>
 			<form action = "">
-			<input type ="checkbox" name = "ingredient"> Potato <br>
-			<input type = "checkbox" name = "indgredient"> Tomato <br>
+
+			<ul id="ingredientsList">
+				<li>Loading...</li>
+			</ul>
+
+			<!-- <input type ="checkbox" name = "ingredient"> Potato <br>
+			<input type = "checkbox" name = "indgredient"> Tomato <br> -->
 			</form>
 		</body>
 
