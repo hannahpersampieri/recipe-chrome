@@ -1,10 +1,12 @@
 // popup.js
-console.log("It worked!")
-chrome.browserAction.onClicked.addListener(function(tab){
-	console.log(tab.url);
-	chrome.tabs.executeScript({
-		code: 'document.body.style.backgroundColor="red"'
-	});
-});
+
+
+var details = {
+	file: 'recipeparser.js'
+};
+var callback = function(result) {
+	console.log(result);
+};
+chrome.tabs.executeScript(details, callback);
 
 
