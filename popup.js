@@ -5,7 +5,7 @@ var details = {
 var callback = function(results) {
 	var ingredients = results[0];
 	var list = document.getElementById("ingredientsList");
-	list.remove(); // Clear loading element
+	document.write("<h1> Recipe: Add this meal </h1>");
 	for(i = 0; i < ingredients.length; i++){
 		var itemstr = ingredients[i]["amount"] + " " + ingredients[i]["unit"]+" "+ingredients[i]["food"];
 		document.write("<li>"+itemstr+"</id>");
