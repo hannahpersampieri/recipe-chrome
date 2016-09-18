@@ -37,8 +37,6 @@ for(i = 0; i < ingredients_div.length; i++){
 	ingredients.push(info);
 }
 /* TO - DO
-	- remove measurements
-	- remove , and any details after (?)
 	- push to popup
 */
 console.log(ingredients);
