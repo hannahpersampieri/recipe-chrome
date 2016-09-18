@@ -1,6 +1,4 @@
 // popup.js
-
-
 var details = {
 	file: 'recipeparser.js'
 };

@@ -30,7 +30,12 @@ for(i = 0; i < ingredients_div.length; i++){
 			info["unit"] = inner_text[j];
 		}
 		else {
-			info["food"] = inner_text[j];
+			if( j > 0 && info["food"] != null){
+				info["food"] = info["food"] + " "+inner_text[j]
+			}
+			else{
+				info["food"] = inner_text[j];
+			}
 		}
 
 	}
@@ -39,5 +44,5 @@ for(i = 0; i < ingredients_div.length; i++){
 /* TO - DO
 	- push to popup
 */
-console.log(ingredients);
+ingredients;
 
